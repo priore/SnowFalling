@@ -15,16 +15,26 @@ With this Framework you can create iPhone and iPad Apps with snow falling effect
 Below a simple example on Objective-C :
 
 // always visible
+
 SnowFalling *snowFalling = [[[SnowFalling alloc] initWithView:self.view] autorelease];
+
 snowFalling.numbersOfFlake = 20;
+
 snowFalling.hidden = NO;
 
+
 // visible only from dec 1 to jan 5
+
 SnowFalling *snowFalling = [[[SnowFalling alloc] initWithView:self.view autoStartEnd:YES];
 
+
 // only from the dates specified
+
 NSDate *date1 = ...
+
 NSDate *date2 = ...
+
 SnowFalling *snowFalling = [[[SnowFalling alloc] initWithView:self.view startDate:date1 endDate:date2];
+
 
 **[GET IT NOW!](http://www.prioregroup.com/iphone/snowfalling.aspx)**
