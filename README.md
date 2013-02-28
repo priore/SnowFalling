@@ -38,3 +38,9 @@ SnowFalling *snowFalling = [[[SnowFalling alloc] initWithView:self.view startDat
 
 
 **[GET IT NOW!](http://www.prioregroup.com/iphone/snowfalling.aspx)**
+
+sample screen-shot :
+
+![Screenshot](https://github.com/priore/SnowFalling-Demo/raw/master/snowfalling.jpg)
+
+[Prioregroup.com Home Page](http://www.prioregroup.com)
