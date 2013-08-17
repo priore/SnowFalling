@@ -6,8 +6,8 @@ A nice iOS framework to able you to create iPhone and iPad Apps with snow fallin
 With this Framework you can create iPhone and iPad Apps with snow falling effects on UIViewController, with rotation of flakes, left and right direction and flakes that vary in size (big, medium and small).
 
 ## Requirements
-* iOS 3.1, 3.2, 4.x, 5.x and last iOS6.
-* XCode 4.1 or later
+* iOS 4.3, 5.x and last iOS6.
+* XCode 4.x or later
 * Foundation.framework
 * UIKit.framework
 * QuartzCore.framework
