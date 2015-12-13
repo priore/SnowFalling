@@ -68,10 +68,12 @@
 @end
 
 @interface DispatchTimeObject : NSObject
-
-@property (nonatomic) dispatch_source_t source;
+{
+    dispatch_source_t _source;
+}
 
 - (instancetype)initWithSource:(dispatch_source_t)source;
+- (dispatch_source_t)source;
 
 @end
 
@@ -498,10 +500,15 @@
 - (instancetype)initWithSource:(dispatch_source_t)source
 {
     if (self = [super init]) {
-        self.source = source;
+        _source = source;
     }
     
     return self;
+}
+
+- (dispatch_source_t)source
+{
+    return _source;
 }
 
 @end
