@@ -69,7 +69,7 @@
 
 @interface DispatchTimeObject : NSObject
 
-@property (nonatomic, strong) dispatch_source_t source;
+@property (nonatomic) dispatch_source_t source;
 
 - (instancetype)initWithSource:(dispatch_source_t)source;
 
