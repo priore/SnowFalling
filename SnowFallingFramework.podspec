@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
     s.source                = { git: 'https://github.com/priore/SnowFalling.git', :tag => "v#{s.version}" }
     s.ios.deployment_target = '5.1.1'
     s.requires_arc          = true
-    s.source_files          = 'SnowFalling/Classes/SnowFalling.{h.m}'
+    s.source_files          = 'SnowFalling/Classes/SnowFalling.{h,m}'
     s.ios.framework         = 'Foundation', 'QuartzCore', 'UIKit'
 end
