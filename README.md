@@ -1,6 +1,8 @@
 **SnowFalling**
 ================
 
+* NOW IS FREE WITH SOURCE CODE !!!
+
 A nice iOS framework to able you to create iPhone and iPad Apps with snow falling effects on a UIViewController, with rotation of flakes, from left and right directions, and flakes with big, medium and tiny size's.
 
 With this Framework you can create iPhone and iPad Apps with snow falling effects on UIViewController, with rotation of flakes, left and right direction and flakes that vary in size (big, medium and small).
@@ -32,12 +34,6 @@ SnowFalling *snowFalling = [[[SnowFalling alloc] initWithView:self.view startDat
 ```
 
 [![YOUTUBE VIDEO](https://github.com/priore/SnowFalling-Demo/raw/master/snowfalling.jpg)](https://www.youtube.com/watch?v=zhx9-5847tM "YOUTUBE VIDEO")
-
-## Licenses
-
-Trial (only simulator) | Single App
-------------- | -------------
-[![TRIAL LICENSE](/images/freetrial.png)](https://github.com/priore/SnowFalling/archive/master.zip)  | [![BUY SINGLE LICENSE](/images/239.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XM4T3S52EPUG4)
 
 ##Contacts
 
