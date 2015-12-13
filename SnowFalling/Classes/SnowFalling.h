@@ -1,7 +1,7 @@
 //
 //  SnowFalling.h
 //  Snow Falling Effect iPhone/iPad.
-//  Version: 1.4.5
+//  Version: 1.4.3
 //
 //  Copyright 2012, Danilo Priore. All rights reserved.
 //  Internet: http://www.prioregroup.com

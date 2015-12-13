@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = 'SnowFallingFramework'
-    s.version               = '1.4.2'
+    s.version               = '1.4.3'
     s.summary               = 'A nice iOS framework to able you to create iPhone and iPad Apps with snow falling effects.'
     s.license               = 'MIT'
     s.authors               = { 'Danilo Priore' => 'support@prioregroup.com' }

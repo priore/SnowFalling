@@ -1,7 +1,7 @@
 //
 //  SnowFalling.m
 //  Snow Falling Effect iPhone/iPad.
-//  Version: 1.4.5
+//  Version: 1.4.3
 //
 //  Copyright 2012, Danilo Priore. All rights reserved.
 //  Internet: http://www.prioregroup.com
@@ -67,7 +67,14 @@
 
 @end
 
-	
+@interface DispatchTimeObject : NSObject
+
+@property (nonatomic, strong) dispatch_source_t source;
+
+- (instancetype)initWithSource:(dispatch_source_t)source;
+
+@end
+
 @implementation SnowFalling
 
 @synthesize hidden, numbersOfFlake, imageOfFlake, directionsOfFlake;
@@ -157,7 +164,7 @@
     
     if (timerArray) {
         for (int i = 0; i < [timerArray count]; i++) {
-            dispatch_source_t _timer = (id)[timerArray objectAtIndex:i];
+            dispatch_source_t _timer = [[timerArray objectAtIndex:i] source];
             dispatch_source_cancel(_timer);
             _timer = nil;
         }
@@ -229,18 +236,6 @@
 
 - (void)startSnowFlakes {
 	
-#ifdef TRIAL
-	
-	NSString *model = [[UIDevice currentDevice] model];
-	BOOL simulator = [model hasSuffix:@"Simulator"];
-
-	if (!simulator) {
-        UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"SnowFalling FrameWork" message:@"This is a trial version of the framework. When you purchase, you have full functionality on this device, and this message is not shown.\n\nwww.prioregroup.com" delegate:nil cancelButtonTitle:nil otherButtonTitles:nil] autorelease];
-        [alert show];
-	}
-
-#endif
-	
 	if (timerArray == nil || (timerArray && [timerArray count] == 0)) {
         
         if (timerArray == nil) {
@@ -259,7 +254,8 @@
             });
             dispatch_resume(_timer);
             
-            [timerArray addObject:(id)(_timer)];
+            DispatchTimeObject *obj = [[DispatchTimeObject alloc] initWithSource:_timer];
+            [timerArray addObject:obj];
         }
 	}
 }
@@ -496,3 +492,17 @@
 }
 
 @end
+
+@implementation DispatchTimeObject
+
+- (instancetype)initWithSource:(dispatch_source_t)source
+{
+    if (self = [super init]) {
+        self.source = source;
+    }
+    
+    return self;
+}
+
+@end
+
