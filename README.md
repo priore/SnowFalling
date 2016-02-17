@@ -9,7 +9,7 @@ With this Framework you can create iPhone and iPad Apps with snow falling effect
 
 ## Requirements for [iOS](http://www.wikipedia.org/wiki/IOS)
 * [iOS](http://www.wikipedia.org/wiki/IOS) 5.1.1, and later
-* [XCode](http://www.wikipedia.org/wiki/Xcode) 5.0 or later
+* [Xcode](http://www.wikipedia.org/wiki/Xcode) 5.0 or later
 * Foundation.framework
 * UIKit.framework
 * QuartzCore.framework
